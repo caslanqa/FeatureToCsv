@@ -24,6 +24,9 @@ public class Converter extends JFrame{
     private JButton btnClose;
     private JLabel lblImageContainer;
     private JLabel lblCompanyName;
+    private JLabel lblDeveloper;
+    private JLabel lblVersion;
+    private JLabel lblAppName;
     public List<String> files;
 
     public Converter() throws InterruptedException {
@@ -40,7 +43,7 @@ public class Converter extends JFrame{
                     }
                 });
 
-        ImageIcon imageIcon = new ImageIcon("src/main/resources/pf.png");
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource("pf.png"));
         Image image = imageIcon.getImage();
         Image newImage = image.getScaledInstance(100, 60, Image.SCALE_DEFAULT);
         imageIcon = new ImageIcon(newImage);
