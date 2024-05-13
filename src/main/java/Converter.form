@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Converter">
+  <grid id="27dc6" binding="wrapper" layout-manager="GridLayoutManager" row-count="14" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="450"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <hspacer id="ca8d9">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="36c36" class="javax.swing.JLabel" binding="lblFilePaths">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="16"/>
+          <text value="File Path"/>
+        </properties>
+      </component>
+      <hspacer id="bf05a">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="25d3a">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="35241" class="javax.swing.JLabel" binding="lblQuarter">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="16"/>
+          <text value="Quarter"/>
+        </properties>
+      </component>
+      <component id="7cda1" class="javax.swing.JLabel" binding="lblComponent">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="16"/>
+          <text value="Component"/>
+        </properties>
+      </component>
+      <component id="d01fd" class="javax.swing.JLabel" binding="lblLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="16"/>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="25822" class="javax.swing.JLabel" binding="lblAssignee">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="16"/>
+          <text value="Assignee"/>
+        </properties>
+      </component>
+      <component id="db159" class="javax.swing.JLabel" binding="lblRepoFolder">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="16"/>
+          <text value="Repo Folder"/>
+        </properties>
+      </component>
+      <component id="28c90" class="javax.swing.JComboBox" binding="cbQuarter">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="---Select Quarter---"/>
+            <item value="Q1"/>
+            <item value="Q2"/>
+            <item value="Q3"/>
+            <item value="Q4"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7257" class="javax.swing.JComboBox" binding="cbComponent">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="---Select Component---"/>
+            <item value="Acquisition"/>
+            <item value="Alpha"/>
+            <item value="Android"/>
+            <item value="Atlas"/>
+            <item value="atlas-listing"/>
+            <item value="Client-Account-Manager"/>
+            <item value="CPQ"/>
+            <item value="Customer-Service"/>
+            <item value="Data-Insights"/>
+            <item value="Growth"/>
+            <item value="iOS"/>
+            <item value="Manager"/>
+            <item value="Monetization"/>
+            <item value="Native-Apps"/>
+            <item value="Native-Apps-Android"/>
+            <item value="Native-Apps-iOS"/>
+            <item value="Neptune"/>
+            <item value="New-Projects"/>
+            <item value="orion"/>
+            <item value="Partner-Gateway"/>
+            <item value="PF-Expert"/>
+            <item value="Salesforce"/>
+            <item value="Website"/>
+            <item value="Website restructure"/>
+          </model>
+        </properties>
+      </component>
+      <component id="e88a3" class="javax.swing.JComboBox" binding="cbLabel">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="---Select Label---"/>
+            <item value="Automated_BE"/>
+            <item value="Automated_FE"/>
+            <item value="To_Be_Automated"/>
+            <item value="Manual"/>
+          </model>
+        </properties>
+      </component>
+      <component id="bcbdb" class="javax.swing.JComboBox" binding="cbAssignee">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="---Select Assignee---"/>
+            <item value="Ahmad Dahlan"/>
+            <item value="Anshita Bhasin"/>
+            <item value="Anu Nallappan"/>
+            <item value="Burhan Gultekin"/>
+            <item value="Cihan Aslan"/>
+            <item value="Divya Gupta"/>
+            <item value="Dolly Arora"/>
+            <item value="Gomathy Dhanasekaran"/>
+            <item value="Huseyin Kesmez"/>
+            <item value="Jaydeep Singh"/>
+            <item value="Mehmet Kadri Efe"/>
+            <item value="Mesut Kurtulan"/>
+            <item value="Mousa Sabah"/>
+            <item value="Nipuni Perera"/>
+            <item value="Sanith Shetty"/>
+            <item value="Selim Ocakdan"/>
+            <item value="Tulin Mungan"/>
+          </model>
+        </properties>
+      </component>
+      <component id="cefab" class="javax.swing.JTextField" binding="inptFilePath">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a734f" class="javax.swing.JTextField" binding="inptRepoFolder">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ade99" class="javax.swing.JButton" binding="btnConvert">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="20"/>
+          <text value="CONVERT"/>
+        </properties>
+      </component>
+      <vspacer id="7e459">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="28eb1">
+        <constraints>
+          <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="bc973" class="javax.swing.JButton" binding="btnClose">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="20"/>
+          <text value="CLOSE"/>
+        </properties>
+      </component>
+      <component id="ca8a5" class="javax.swing.JLabel" binding="lblImageContainer">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <font size="48"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <vspacer id="eb4f9">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="f5b5c">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="4fb65" class="javax.swing.JLabel" binding="lblCompanyName">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="24" style="1"/>
+          <text value="Property Finder"/>
+        </properties>
+      </component>
+      <component id="915a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ayuthaya" size="22" style="1"/>
+          <text value="Feature To CSV"/>
+        </properties>
+      </component>
+      <vspacer id="60080">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
