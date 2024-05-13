@@ -19,7 +19,7 @@ public class FileOperations {
             String line;
 
             while((line= br.readLine()) != null){
-                line = line.replaceAll("\\b(Given|When|Then|And)\\b","*").replaceAll("#","");
+                line = line.replaceAll("#","");
                 if (!line.isEmpty())
                     filewrapper.add(line.trim());
             }
@@ -62,8 +62,6 @@ public class FileOperations {
     public static void createCSV(List<String> files){
         for (int i = 0; i < files.size() ; i++) {
             List<String> fileAsList = FileOperations.getFileAsList(files.get(i));
-            //List<String> list = TextConverter.getResult(fileaslist);
-            //FileOperations.writeToCsv(list,(i+1));
             try {
                 createExcelFile(fileAsList,(i+1));
             } catch (Exception e) {
@@ -90,6 +88,7 @@ public class FileOperations {
                         String directoryPathNew = rootPath + "/Downloads/Scenarios/Scenario%s.csv";
                         com.aspose.cells.Workbook w1 = w1 = new com.aspose.cells.Workbook(String.format(directoryPathBase, String.valueOf(i)));
                         w1.save(String.format(directoryPathNew, String.valueOf(i)));
+                        file.delete();
                         break;
                     }else {
                     try {
@@ -109,26 +108,20 @@ public class FileOperations {
     public static void createExcelFile(List<String> list, int indx) throws Exception {
         String directoryPath = System.getProperty("user.home").concat("/Downloads/Scenarios/");
         String filePath = directoryPath.concat("scenario").concat(String.valueOf(indx)).concat(".xlsx");
-        // Sample string list
         List<String> headers = TextConverter.headers;
 
-        // Sample list of maps
         List<Map<String, String>> data = TextConverter.getScenarioMaps(list);
 
-        // Create a new Excel workbook
         Workbook workbook = new XSSFWorkbook();
         try {
-            // Create a sheet
             Sheet sheet = workbook.createSheet("Feature".concat(String.valueOf(indx)));
 
-            // Write headers
             Row headerRow = sheet.createRow(0);
             for (int i = 0; i < headers.size(); i++) {
                 Cell cell = headerRow.createCell(i);
                 cell.setCellValue(headers.get(i));
             }
 
-            // Write data
             int rowNum = 1;
             for (Map<String, String> map : data) {
                 Row row = sheet.createRow(rowNum++);
@@ -144,7 +137,6 @@ public class FileOperations {
             if (!Files.exists(directory)) {
                 Files.createDirectories(directory);
             }
-            // Write the workbook to a file
             try (FileOutputStream fileOut = new FileOutputStream(filePath)) {
                 workbook.write(fileOut);
             } catch (IOException e) {
