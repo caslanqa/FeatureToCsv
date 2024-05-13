@@ -1,3 +1,5 @@
+import com.aspose.cells.License;
+import com.aspose.cells.TxtSaveOptions;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -87,7 +89,9 @@ public class FileOperations {
                         String directoryPathBase = rootPath + "/Downloads/Scenarios/Scenario%s.xlsx";
                         String directoryPathNew = rootPath + "/Downloads/Scenarios/Scenario%s.csv";
                         com.aspose.cells.Workbook w1 = w1 = new com.aspose.cells.Workbook(String.format(directoryPathBase, String.valueOf(i)));
-                        w1.save(String.format(directoryPathNew, String.valueOf(i)));
+                        TxtSaveOptions txtSaveOptions = new TxtSaveOptions();
+                        txtSaveOptions.setSeparatorString(";");
+                        w1.save(String.format(directoryPathNew, String.valueOf(i)),txtSaveOptions);
                         file.delete();
                         break;
                     }else {
